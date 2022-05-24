@@ -1,0 +1,6 @@
+onnxruntime
+librosa
+numpy
+wave
+pydub
+resampy
