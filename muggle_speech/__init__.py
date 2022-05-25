@@ -138,7 +138,7 @@ class PreProcess(object):
 
 
 class MuggleSpeech:
-    def __init__(self, max_len=1000, mode='wave'):
+    def __init__(self, max_len=100, mode='wave'):
         self.max_len = max_len
         self.encoder_sess = onnxruntime.InferenceSession(os.path.join(os.path.dirname(__file__), "encoder.onnx"))
         self.decoder_sess = onnxruntime.InferenceSession(os.path.join(os.path.dirname(__file__), "decoder.onnx"))
